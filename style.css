@@ -21,7 +21,12 @@ body {
   background: #f7f7f9;
   position: relative;
 }
-
+nav, section, main{
+  margin: auto;
+  width:375px;
+  position: absolute;
+  padding:0 24px;
+}
 nav {
   left: 0;
   top: 0;
@@ -31,8 +36,6 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: auto;
-  width: 375px;
   position: sticky;
   padding: 0 24px;
   z-index: 2;
@@ -52,7 +55,7 @@ section {
   left: calc(50% - (187.5px));
   overflow: hidden;
   background: #fff;
-  background-image: url(../Portfolio-setup-and-mobile-first/imgoverlay/header-shapes\ mobile@2x.svg);
+  background-image: url(../Portfolio-finish-mobile-version/imgoverlay/header-shapes\ mobile@2x.svg);
   background-repeat: no-repeat;
   background-position-x: 0;
   background-position-y: 100%;
