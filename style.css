@@ -23,7 +23,8 @@ body {
 
 nav,
 section,
-main {
+main > ul,
+aside {
   margin: auto;
   width: 375px;
   position: absolute;
@@ -170,11 +171,23 @@ section h3 {
   flex-grow: 0;
 }
 
+.abt_head .btn a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #396df2;
+  letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
 .container h3 a:hover {
   color: red;
 }
 
-main {
+main > ul {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
@@ -185,7 +198,7 @@ main {
   top: 718px;
 }
 
-main > div {
+main > ul > li {
   display: flex;
   flex-direction: column;
   padding: 16px;
@@ -200,7 +213,7 @@ main > div {
   flex-grow: 0;
 }
 
-main > div > div {
+main > ul > li > div {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -213,7 +226,7 @@ main > div > div {
   flex-grow: 0;
 }
 
-main > div > div > div {
+main > ul > li > div > div {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -226,14 +239,14 @@ main > div > div > div {
   flex-grow: 0;
 }
 
-main > div > div > div h1 {
+main > ul > li > div > div h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
 }
 
-main > div > div > div ul {
+main > ul > li > div > div ul {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -252,7 +265,7 @@ main > div > div > div ul {
   flex-grow: 0;
 }
 
-main > div > div > div ul li:nth-of-type(1) {
+main > ul > li > div > div ul li:nth-of-type(1) {
   color: #344563;
   font-style: normal;
   font-weight: 600;
@@ -260,7 +273,7 @@ main > div > div > div ul li:nth-of-type(1) {
   line-height: 16px;
 }
 
-main > div > div > div ul li:nth-of-type(3) {
+main > ul > li > div > div ul li:nth-of-type(3) {
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -270,7 +283,7 @@ main > div > div > div ul li:nth-of-type(3) {
   height: 16px;
 }
 
-main > div > div > div ul li:nth-of-type(5) {
+main > ul > li > div > div ul li:nth-of-type(5) {
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -278,12 +291,12 @@ main > div > div > div ul li:nth-of-type(5) {
   color: #7a869a;
 }
 
-main > div > div > div > ul > li img {
+main > ul > li > div > div > ul > li img {
   width: 8px;
   height: 8px;
 }
 
-main > div > div > p {
+main > ul > li > div > p {
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -325,4 +338,146 @@ main > div > div > p {
   top: calc(50% - (48px / 2));
   border: 1px solid #6070ff;
   border-radius: 8px;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 114px 24px;
+  gap: 24px;
+  height: 375px;
+  height: 1125.15px;
+  left: calc(50% - (187px));
+  top: 3506px;
+  background: #fff;
+}
+
+.abt_head {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 12px;
+  width: 327px;
+  height: 409px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.abt_head h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  color: #172b40;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.abt_head p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.abt_head h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.abt_head .btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  width: 162px;
+  height: 48px;
+  border: 1px;
+  border-radius: 8px;
+}
+
+.links2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  width: 327px;
+  height: 464.15px;
+}
+
+.itm1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  width: 327px;
+  height: 320.15px;
+}
+
+.itm1 > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12px;
+  gap: 12px;
+}
+
+.itm1 > div ul {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  gap: 16px;
+  width: 303px;
+  top: ;
+  height: 66.72px;
+  background: #f7f7f9;
+  border-radius: 8px;
+}
+
+.itm2,
+.itm3 {
+  width: 327px;
+  height: 72px;
+}
+
+.itm2 > .lan,
+.itm3 > .lan> {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.itm1 > .lan {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.itm2 > .lan {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.itm3 > .lan {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
