@@ -22,9 +22,10 @@ body {
 }
 
 nav,
-section,
-main > ul,
-aside {
+.about,
+.work>ul,
+.headline
+{
   margin: auto;
   width: 375px;
   position: absolute;
@@ -45,11 +46,10 @@ nav {
   z-index: 2;
 }
 
-section {
+.headline {
   display: flex;
   margin: auto;
   width: 375px;
-  position: absolute;
   flex-direction: column;
   align-items: flex-start;
   padding: 236px 24px 144px 24px;
@@ -59,7 +59,7 @@ section {
   left: calc(50% - (187.5px));
   overflow: hidden;
   background: #fff;
-  background-image: url(../Portfolio-finish-mobile-version/imgoverlay/header-shapes\ mobile@2x.svg);
+  background-image: url(imgoverlay/header-shapes\ mobile@2x.svg);
   background-repeat: no-repeat;
   background-position-x: 0;
   background-position-y: 100%;
@@ -107,6 +107,11 @@ nav .logo a {
   z-index: 1;
 }
 
+button:hover{
+  background:red ;
+  border: none;
+}
+
 .social-media {
   display: flex;
   flex-direction: row;
@@ -117,7 +122,7 @@ nav .logo a {
   flex-grow: 0;
 }
 
-section h1 {
+.headline h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 44px;
@@ -134,7 +139,7 @@ section h1 {
   text-align: left;
 }
 
-section p {
+.headline p {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -147,7 +152,7 @@ section p {
   height: 150px;
 }
 
-section h3 {
+.headline h3 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -160,7 +165,7 @@ section h3 {
   flex-grow: 0;
 }
 
-.container h3 a {
+.headline h3 a {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -187,7 +192,7 @@ section h3 {
   color: red;
 }
 
-main > ul {
+.work > ul {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
@@ -198,7 +203,7 @@ main > ul {
   top: 718px;
 }
 
-main > ul > li {
+.work  > ul > li {
   display: flex;
   flex-direction: column;
   padding: 16px;
@@ -213,7 +218,7 @@ main > ul > li {
   flex-grow: 0;
 }
 
-main > ul > li > div {
+.work  > ul > li > div {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -226,7 +231,7 @@ main > ul > li > div {
   flex-grow: 0;
 }
 
-main > ul > li > div > div {
+.work  > ul > li > div > div {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -239,14 +244,14 @@ main > ul > li > div > div {
   flex-grow: 0;
 }
 
-main > ul > li > div > div h1 {
+.work  > ul > li > div > div h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
 }
 
-main > ul > li > div > div ul {
+.work  > ul > li > div > div ul {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -265,7 +270,7 @@ main > ul > li > div > div ul {
   flex-grow: 0;
 }
 
-main > ul > li > div > div ul li:nth-of-type(1) {
+.work  > ul > li > div > div ul li:nth-of-type(1) {
   color: #344563;
   font-style: normal;
   font-weight: 600;
@@ -273,7 +278,7 @@ main > ul > li > div > div ul li:nth-of-type(1) {
   line-height: 16px;
 }
 
-main > ul > li > div > div ul li:nth-of-type(3) {
+.work  > ul > li > div > div ul li:nth-of-type(3) {
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -283,7 +288,7 @@ main > ul > li > div > div ul li:nth-of-type(3) {
   height: 16px;
 }
 
-main > ul > li > div > div ul li:nth-of-type(5) {
+.work  > ul > li > div > div ul li:nth-of-type(5) {
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -291,12 +296,12 @@ main > ul > li > div > div ul li:nth-of-type(5) {
   color: #7a869a;
 }
 
-main > ul > li > div > div > ul > li img {
+.work  > ul > li > div > div > ul > li img {
   width: 8px;
   height: 8px;
 }
 
-main > ul > li > div > p {
+.work > ul > li > div > p {
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -340,7 +345,7 @@ main > ul > li > div > p {
   border-radius: 8px;
 }
 
-aside {
+.about {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -366,7 +371,7 @@ aside {
   flex-grow: 0;
 }
 
-.abt_head h1 {
+.abt_head h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -447,7 +452,6 @@ aside {
   width: 303px;
   height: 66.72px;
   background: #f7f7f9;
-  border-radius: 8px;
 }
 
 .itm2,
