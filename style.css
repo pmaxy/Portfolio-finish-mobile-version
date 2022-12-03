@@ -23,9 +23,8 @@ body {
 
 nav,
 .about,
-.work>ul,
-.headline
-{
+.work > ul,
+.headline {
   margin: auto;
   width: 375px;
   position: absolute;
@@ -107,8 +106,8 @@ nav .logo a {
   z-index: 1;
 }
 
-button:hover{
-  background:red ;
+button:hover {
+  background: red;
   border: none;
 }
 
@@ -203,7 +202,7 @@ button:hover{
   top: 718px;
 }
 
-.work  > ul > li {
+.work > ul > li {
   display: flex;
   flex-direction: column;
   padding: 16px;
@@ -218,7 +217,7 @@ button:hover{
   flex-grow: 0;
 }
 
-.work  > ul > li > div {
+.work > ul > li > div {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -231,7 +230,7 @@ button:hover{
   flex-grow: 0;
 }
 
-.work  > ul > li > div > div {
+.work > ul > li > div > div {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -244,14 +243,26 @@ button:hover{
   flex-grow: 0;
 }
 
-.work  > ul > li > div > div h1 {
+.work > ul > li > div > div h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
 }
 
-.work  > ul > li > div > div ul {
+.itm1 ul {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  width: 303px;
+  height: 66.72px;
+  background: #f7f7f9;
+  border-radius: 8px;
+  margin: 4px;
+  gap: 16px;
+}
+
+.work > ul > li > div > div ul {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -260,17 +271,7 @@ button:hover{
   height: 32px;
 }
 
-.languages li {
-  align-items: center;
-  padding: 4px 12px;
-  background: #ebebff;
-  border-radius: 8px;
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-}
-
-.work  > ul > li > div > div ul li:nth-of-type(1) {
+.work > ul > li > div > div ul li:nth-of-type(1) {
   color: #344563;
   font-style: normal;
   font-weight: 600;
@@ -278,7 +279,7 @@ button:hover{
   line-height: 16px;
 }
 
-.work  > ul > li > div > div ul li:nth-of-type(3) {
+.work > ul > li > div > div ul li:nth-of-type(3) {
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -288,7 +289,7 @@ button:hover{
   height: 16px;
 }
 
-.work  > ul > li > div > div ul li:nth-of-type(5) {
+.work > ul > li > div > div ul li:nth-of-type(5) {
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -296,9 +297,20 @@ button:hover{
   color: #7a869a;
 }
 
-.work  > ul > li > div > div > ul > li img {
+.work > ul > li > div > div > ul > li img {
   width: 8px;
   height: 8px;
+}
+
+.about > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .work > ul > li > div > p {
@@ -384,17 +396,6 @@ button:hover{
   flex-grow: 0;
 }
 
-.abt_head p {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #344563;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
 .abt_head h3 {
   font-style: normal;
   font-weight: 500;
@@ -430,28 +431,17 @@ button:hover{
 .itm1 {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding: 0;
   width: 327px;
   height: 320.15px;
 }
 
-.itm1 > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 12px;
-  gap: 12px;
-}
-
-.itm1 > div ul {
+.item > .lan {
   display: flex;
   flex-direction: row;
-  align-self: center;
-  gap: 16px;
-  width: 303px;
-  height: 66.72px;
-  background: #f7f7f9;
+  justify-content: space-between;
+  padding: 12px;
+  gap: 12px;
 }
 
 .itm2,
