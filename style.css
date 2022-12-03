@@ -47,7 +47,6 @@ nav {
 
 .headline {
   display: flex;
-  margin: auto;
   width: 375px;
   flex-direction: column;
   align-items: flex-start;
@@ -74,18 +73,15 @@ nav .logo {
   justify-content: flex-start;
 }
 
-.languages a {
+.headline h3 a {
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: #6070ff;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
   flex: none;
   order: 0;
   flex-grow: 0;
-  align-items: center;
-  height: 16px;
 }
 
 nav .logo a {
@@ -102,8 +98,23 @@ nav .logo a {
   flex-grow: 0;
 }
 
+.work .languages a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  align-items: center;
+  height: 16px;
+}
+
 .container {
   z-index: 1;
+  gap: 12px;
 }
 
 button:hover {
@@ -114,11 +125,13 @@ button:hover {
 .social-media {
   display: flex;
   flex-direction: row;
-  gap: 24px;
+  gap: 20px;
   align-items: center;
   flex: none;
   order: 3;
   flex-grow: 0;
+  height: 20px;
+  padding-top: 15px;
 }
 
 .headline h1 {
@@ -161,17 +174,6 @@ button:hover {
   height: 24px;
   flex: none;
   order: 2;
-  flex-grow: 0;
-}
-
-.headline h3 a {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #7f8cff;
-  flex: none;
-  order: 0;
   flex-grow: 0;
 }
 
@@ -258,8 +260,9 @@ button:hover {
   height: 66.72px;
   background: #f7f7f9;
   border-radius: 8px;
-  margin: 4px;
+  margin: 12px 0;
   gap: 16px;
+  padding-top: 12px;
 }
 
 .work > ul > li > div > div ul {
@@ -269,6 +272,22 @@ button:hover {
   padding: 0;
   gap: 12px;
   height: 32px;
+}
+
+.work .languages li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px;
+  width: auto;
+  height: 24px;
+  background: #ebebff;
+  border-radius: 8px;
+}
+
+.itm1 .fne2 li {
+  text-align: center;
+  align-self: center;
 }
 
 .work > ul > li > div > div ul li:nth-of-type(1) {
@@ -321,7 +340,7 @@ button:hover {
   color: #344563;
 }
 
-.languages {
+.work .languages {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -333,6 +352,10 @@ button:hover {
   overflow: hidden;
   width: 203px;
   height: 24px;
+}
+
+.work .languages li:hover {
+  background-color: grey;
 }
 
 .rev {
@@ -425,7 +448,6 @@ button:hover {
   align-items: center;
   padding: 0;
   width: 327px;
-  height: 464.15px;
 }
 
 .itm1 {
@@ -433,21 +455,17 @@ button:hover {
   flex-direction: column;
   padding: 0;
   width: 327px;
-  height: 320.15px;
-}
-
-.item > .lan {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 12px;
-  gap: 12px;
+  height: auto;
 }
 
 .itm2,
 .itm3 {
   width: 327px;
-  height: 72px;
+  height: auto;
+}
+
+hr {
+  width: 327px;
 }
 
 .itm2 > .lan,
