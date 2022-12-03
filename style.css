@@ -316,6 +316,11 @@ button:hover {
   color: #7a869a;
 }
 
+.lan img {
+  height: 16px;
+  width: 16px;
+}
+
 .work > ul > li > div > div > ul > li img {
   width: 8px;
   height: 8px;
@@ -460,12 +465,15 @@ button:hover {
 
 .itm2,
 .itm3 {
-  width: 327px;
+  width: 300px;
   height: auto;
 }
 
 hr {
   width: 327px;
+  height: 1px;
+  background: #dfe1e6;
+  opacity: 0.5;
 }
 
 .itm2 > .lan,
@@ -473,12 +481,15 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 300px;
 }
 
 .itm1 > .lan {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 300px;
+  align-items: center;
 }
 
 .itm2 > .lan {
