@@ -24,7 +24,8 @@ body {
 nav,
 .about,
 .work > ul,
-.headline {
+.headline,
+.contact_form{
   margin: auto;
   width: 375px;
   position: absolute;
@@ -192,7 +193,9 @@ button:hover {
 .container h3 a:hover {
   color: red;
 }
-
+.work{
+  height: 2788px;
+}
 .work > ul {
   display: grid;
   grid-template-columns: 1fr;
@@ -345,18 +348,17 @@ button:hover {
   color: #344563;
 }
 
-.work .languages {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.work .languages { 
   padding: 0;
-  gap: 8px;
-  flex: none;
-  order: 2;
-  flex-grow: 0;
   overflow: hidden;
   width: 203px;
   height: 24px;
+}
+
+.work .languages li{
+  float:left;
+  margin-right: 2px;
+
 }
 
 .work .languages li:hover {
@@ -396,6 +398,7 @@ button:hover {
   left: calc(50% - (187px));
   top: 3506px;
   background: #fff;
+  height: 1263px;
 }
 
 .abt_head {
