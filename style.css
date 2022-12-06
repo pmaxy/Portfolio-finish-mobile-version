@@ -21,6 +21,15 @@ body {
   position: relative;
 }
 
+button {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  background-color: #fff;
+  border: 1px solid #7f8cff;
+  color: #7f8cff;
+}
+
 nav,
 .about,
 .work > ul,
@@ -281,15 +290,6 @@ button:disabled {
   padding-top: 12px;
 }
 
-.work > ul > li > div > div ul {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0;
-  gap: 12px;
-  height: 32px;
-}
-
 .work .languages li {
   display: flex;
   flex-direction: row;
@@ -299,6 +299,15 @@ button:disabled {
   height: 24px;
   background: #ebebff;
   border-radius: 8px;
+}
+
+.work > ul > li > div > div ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 12px;
+  height: 32px;
 }
 
 .itm1 .fne2 li {
@@ -353,6 +362,14 @@ button:disabled {
   flex-grow: 0;
 }
 
+.contact_wrapper p {
+  color: #ebebff;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  margin: 0 12px;
+}
+
 .work > ul > li > div > p {
   font-style: normal;
   font-weight: 400;
@@ -366,11 +383,6 @@ button:disabled {
   overflow: hidden;
   width: 203px;
   height: 24px;
-}
-
-.work .languages li {
-  float: left;
-  margin-right: 2px;
 }
 
 .work .languages li:hover {
@@ -405,8 +417,6 @@ button:disabled {
   align-items: center;
   padding: 114px 24px;
   gap: 24px;
-  height: 375px;
-  height: 1125.15px;
   left: calc(50% - (187px));
   top: 3506px;
   background: #fff;
@@ -519,7 +529,6 @@ hr {
 }
 
 .contact {
-  background-color: var(--n0);
   text-align: center;
   top: 4500px;
   background-color: #6070ff;
@@ -540,14 +549,6 @@ hr {
 
 .contact .section-header {
   color: white;
-}
-
-.contact p {
-  color: var(--b50);
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
-  margin: 0 12px;
 }
 
 .contact form {
@@ -576,13 +577,4 @@ hr {
   top: calc(50% - (48px / 2));
   border: 1px solid #6070ff;
   border-radius: 8px;
-}
-
-button {
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  background-color: #fff;
-  border: 1px solid #7f8cff;
-  color: #7f8cff;
 }
