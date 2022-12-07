@@ -53,6 +53,7 @@ nav {
   position: sticky;
   padding: 0 24px;
   z-index: 2;
+  background-color: #fff;
 }
 
 .headline {
@@ -76,7 +77,6 @@ nav {
 nav .logo {
   display: flex;
   width: 100px;
-  height: 80px;
   left: 12px;
   top: 0;
   align-items: center;

@@ -1,0 +1,39 @@
+@media(min-width:400px){
+    body{
+        width: auto;
+    }
+
+    nav,
+    .about,
+    .work > ul,
+    .headline,
+    .contact {
+    margin: auto;
+    width: 100%;
+    }
+    
+    .nav{
+        height: 72px;
+        margin: 0%;
+    }
+
+    .headline{
+        top:0%;
+        width: 100%;
+        margin: auto;
+        left: 0%;
+        background-image: url(imgoverlay/Header\ bg.svg);
+        background-repeat: no-repeat;
+        background-position-x: 0;
+        background-position-y: 100%;
+        background-size: ;
+
+    }
+    .container{
+       padding: 289px 260px 289px;
+       width: none;
+
+
+    }
+
+}
