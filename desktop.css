@@ -1,4 +1,4 @@
-@media(min-width:900px){
+@media(min-width: 1100px){
     body{
         width: 1440px;
         background: #f7f7f9;
@@ -15,15 +15,15 @@
     .headline,
     .contact {
     margin: auto;
-    width: 100%;
+    width: 100%
     }
     
     header{
-        width: auto;
+        width: 100%;
         padding:26px 154px;
-        position: -webkit-sticky;
         position:sticky ;
         top: 0;
+        margin: auto;
     }
 
     .menu_main .humbuger{
@@ -88,7 +88,6 @@
     .work{
         top: 916px;
         margin: auto;
-        height: none;
         height: 2694px;
     }
 
@@ -188,6 +187,7 @@
         top: 4400px;
         background-image:url(./img/contact\ form\ background\ shapes.svg);
         background-size: auto;
+        width: 100%;
     }
     .contact_wrapper{
         padding: 142px 319px;
