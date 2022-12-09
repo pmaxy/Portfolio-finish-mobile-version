@@ -15,10 +15,9 @@ li {
 body {
   font-family: 'Poppins', sans-serif;
   align-items: center;
-  width: 375px;
   margin: auto;
   background: #f7f7f9;
-  position: relative;
+  min-width: 375px;
 }
 
 button {
@@ -30,18 +29,17 @@ button {
   color: #7f8cff;
 }
 
-nav,
 .about,
 .work > ul,
 .headline,
 .contact {
   margin: auto;
-  width: 375px;
-  position: absolute;
   padding: 0 24px;
+  align-items: center;
+  width: 100%;
 }
 
-nav {
+header {
   left: 0;
   top: 0;
   right: 0;
@@ -51,36 +49,35 @@ nav {
   justify-content: space-between;
   align-items: center;
   position: sticky;
-  padding: 0 24px;
   z-index: 2;
+  background-color: #fff;
+  margin: 0;
 }
 
 .headline {
   display: flex;
-  width: 375px;
   flex-direction: column;
-  align-items: flex-start;
   padding: 236px 24px 144px 24px;
   gap: 12px;
   border-bottom-left-radius: 40px;
   top: 0;
-  left: calc(50% - (187.5px));
   overflow: hidden;
   background: #fff;
   background-image: url(imgoverlay/header-shapes\ mobile@2x.svg);
   background-repeat: no-repeat;
   background-position-x: 0;
   background-position-y: 100%;
+  background-size: 100%;
 }
 
-nav .logo {
+header .logo {
   display: flex;
   width: 100px;
-  height: 80px;
   left: 12px;
   top: 0;
   align-items: center;
   justify-content: flex-start;
+  padding: 0 24px;
 }
 
 .headline h3 a {
@@ -94,7 +91,7 @@ nav .logo {
   flex-grow: 0;
 }
 
-nav .logo a {
+header .logo a {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -108,18 +105,24 @@ nav .logo a {
   flex-grow: 0;
 }
 
+span:hover {
+  color: rebeccapurple;
+  transition: all;
+  transition-duration: 0.1s;
+  transform: scale(1.02);
+}
+
 .work .languages a {
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
-  letter-spacing: 0.03em;
   color: #6070ff;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   align-items: center;
   height: 16px;
+  padding: 4px 12px;
+  background: #ebebff;
+  border-radius: 8px;
 }
 
 .container {
@@ -166,10 +169,10 @@ button:disabled {
   flex: none;
   order: 0;
   flex-grow: 0;
-  width: 300px;
   height: 150px;
   letter-spacing: 0;
   text-align: left;
+  max-width: 95%;
 }
 
 .headline p {
@@ -181,7 +184,6 @@ button:disabled {
   flex: none;
   order: 1;
   flex-grow: 0;
-  width: 327px;
   height: 150px;
 }
 
@@ -191,7 +193,6 @@ button:disabled {
   align-items: center;
   padding: 0;
   gap: 8px;
-  width: 117px;
   height: 24px;
   flex: none;
   order: 2;
@@ -215,7 +216,7 @@ button:disabled {
 }
 
 .work {
-  height: 2788px;
+  z-index: 1;
 }
 
 .work > ul {
@@ -224,9 +225,7 @@ button:disabled {
   align-items: center;
   padding: 114px 24px;
   gap: 88px;
-  height: 2788px;
   left: 0;
-  top: 718px;
 }
 
 .work > ul > li {
@@ -234,14 +233,24 @@ button:disabled {
   flex-direction: column;
   padding: 16px;
   gap: 12px;
-  width: 327px;
-  height: 552px;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   flex: none;
   order: 0;
   flex-grow: 0;
+  min-width: 200px;
+}
+
+.lan img {
+  height: 16px;
+  width: 16px;
+}
+
+.work > ul > li > img {
+  height: 100%;
+  width: auto;
+  max-width: fit-content;
 }
 
 .work > ul > li > div {
@@ -250,7 +259,6 @@ button:disabled {
   align-items: flex-start;
   padding: 0;
   gap: 12px;
-  width: 295px;
   height: 288px;
   flex: none;
   order: 1;
@@ -263,14 +271,26 @@ button:disabled {
   align-items: flex-start;
   padding: 0;
   gap: 12px;
-  width: 295px;
   height: 80px;
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
-.work > ul > li > div > div h1 {
+.abt_head h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  color: #172b40;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.work > ul > li > div > div h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -281,24 +301,13 @@ button:disabled {
   display: flex;
   flex-direction: row;
   align-self: center;
-  width: 303px;
   height: 66.72px;
   background: #f7f7f9;
   border-radius: 8px;
   margin: 12px 0;
   gap: 16px;
   padding-top: 12px;
-}
-
-.work .languages li {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 4px 12px;
-  width: auto;
-  height: 24px;
-  background: #ebebff;
-  border-radius: 8px;
+  width: 100%;
 }
 
 .work > ul > li > div > div ul {
@@ -329,7 +338,6 @@ button:disabled {
   font-size: 13px;
   line-height: 16px;
   color: #7a869a;
-  width: 88px;
   height: 16px;
 }
 
@@ -339,11 +347,6 @@ button:disabled {
   font-size: 13px;
   line-height: 16px;
   color: #7a869a;
-}
-
-.lan img {
-  height: 16px;
-  width: 16px;
 }
 
 .work > ul > li > div > div > ul > li img {
@@ -379,9 +382,11 @@ button:disabled {
 }
 
 .work .languages {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
   padding: 0;
   overflow: hidden;
-  width: 203px;
   height: 24px;
 }
 
@@ -390,7 +395,6 @@ button:disabled {
 }
 
 .rev {
-  width: 295px;
   height: 72px;
   position: relative;
   flex: none;
@@ -417,10 +421,8 @@ button:disabled {
   align-items: center;
   padding: 114px 24px;
   gap: 24px;
-  left: calc(50% - (187px));
-  top: 3506px;
   background: #fff;
-  height: 1263px;
+  z-index: 1;
 }
 
 .abt_head {
@@ -429,21 +431,7 @@ button:disabled {
   align-items: flex-start;
   padding: 0;
   gap: 12px;
-  width: 327px;
   height: 409px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.abt_head h2 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  display: flex;
-  align-items: center;
-  color: #172b40;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -476,44 +464,50 @@ button:disabled {
   flex-direction: column;
   align-items: center;
   padding: 0;
-  width: 327px;
+  min-width: 300px;
+  max-width: 700px;
 }
 
 .itm1 {
   display: flex;
   flex-direction: column;
   padding: 0;
-  width: 327px;
   height: auto;
+  width: 100%;
 }
 
 .itm2,
 .itm3 {
-  width: 300px;
+  width: 100%;
   height: auto;
 }
 
+.lan {
+  width: 100%;
+}
+
 hr {
-  width: 327px;
+  width: 100%;
   height: 1px;
   background: #dfe1e6;
   opacity: 0.5;
 }
 
 .itm2 > .lan,
-.itm3 > .lan> {
+.itm3 > .lan {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 300px;
+  width: 100%;
 }
 
 .itm1 > .lan {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 300px;
+  padding: 0 16px;
   align-items: center;
+  width: 100%;
 }
 
 .itm2 > .lan {
@@ -529,15 +523,14 @@ hr {
 }
 
 .contact {
+  z-index: 1;
   text-align: center;
-  top: 4500px;
   background-color: #6070ff;
-  border-top-left-radius: 50px;
-  background-image: url("./img/contact\ form\ shapes-mobile@2x.svg");
+  border-top-left-radius: 120px;
+  background-image: url(./img/contact\ form\ background\ shapes.svg);
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-position-y: 100%;
-  background-size: 265px 92%;
 }
 
 .contact_wrapper {
@@ -574,7 +567,6 @@ hr {
   padding: 12px;
   width: 124px;
   height: 48px;
-  top: calc(50% - (48px / 2));
   border: 1px solid #6070ff;
   border-radius: 8px;
 }
