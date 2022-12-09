@@ -552,6 +552,13 @@ hr {
   color: white;
 }
 
+.contact .description{
+  transition: all 0.5s linear;
+}
+.contact .description:hover{
+  margin-left: 40px;
+}
+
 .contact form {
   margin-top: 40px;
   display: flex;
