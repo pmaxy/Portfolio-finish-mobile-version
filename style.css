@@ -27,8 +27,6 @@ button {
   background-color: #fff;
   border: 1px solid #7f8cff;
   color: #7f8cff;
-  transition: all 0.3s ease-in-out;
-  
 }
 
 .about,
@@ -135,7 +133,7 @@ span:hover {
 button:hover {
   background: #6070ff;
   border: none;
-  color: #fff; 
+  color: #fff;
 
 }
 
