@@ -28,7 +28,6 @@ button {
   border: 1px solid #7f8cff;
   color: #7f8cff;
   transition: all 0.3s ease-in-out;
-  
 }
 
 .about,
@@ -136,7 +135,6 @@ button:hover {
   background: #6070ff;
   border: none;
   color: #fff;
-
 }
 
 button:focus {
@@ -257,6 +255,11 @@ button:disabled {
   transition: all 0.5s ease-out;
 }
 
+.work > ul > li > div > div > ul > li img {
+  width: 8px;
+  height: 8px;
+}
+
 .work > ul > li > img:hover {
   transform: scale(1.03);
 }
@@ -355,11 +358,6 @@ button:disabled {
   font-size: 13px;
   line-height: 16px;
   color: #7a869a;
-}
-
-.work > ul > li > div > div > ul > li img {
-  width: 8px;
-  height: 8px;
 }
 
 .about > p {
@@ -552,10 +550,11 @@ hr {
   color: white;
 }
 
-.contact .description{
+.contact .description {
   transition: all 0.5s linear;
 }
-.contact .description:hover{
+
+.contact .description:hover {
   margin-left: 40px;
 }
 
