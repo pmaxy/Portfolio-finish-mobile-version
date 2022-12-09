@@ -105,6 +105,13 @@ header .logo a {
   flex-grow: 0;
 }
 
+span:hover {
+  color: rebeccapurple;
+  transition: all;
+  transition-duration: 0.1s;
+  transform: scale(1.02);
+}
+
 .work .languages a {
   font-style: normal;
   font-weight: 500;
@@ -165,6 +172,7 @@ button:disabled {
   height: 150px;
   letter-spacing: 0;
   text-align: left;
+  max-width: 95%;
 }
 
 .headline p {

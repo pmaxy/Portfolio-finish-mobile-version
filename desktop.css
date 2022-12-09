@@ -60,7 +60,7 @@
   }
 
   .headline h1 {
-    width: auto;
+    max-width: 99%;
     font-weight: 700;
     font-size: 48px;
     line-height: 60px;
@@ -69,6 +69,7 @@
     padding-right: 500px;
     padding-bottom: 12px;
     overflow: none;
+    width: 100%;
   }
 
   .headline p {
