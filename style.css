@@ -79,6 +79,19 @@ header .logo {
   align-items: center;
   justify-content: flex-start;
   padding: 0 24px;
+  animation-name: logo_rotate;
+  animation-timing-function: ease-in;
+  animation-duration: 0.2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes logo_rotate {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(90deg); }
+  50% { transform: rotate(180deg); }
+  75% { transform: rotate(270deg); }
+  100% { transform: rotate(0deg); }
 }
 
 .headline h3 a {
