@@ -17,6 +17,7 @@ body {
   align-items: center;
   margin: auto;
   background: #f7f7f9;
+  min-width: 375px;
 }
 
 button {
