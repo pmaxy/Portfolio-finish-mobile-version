@@ -35,7 +35,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Patrick wanjiru Portifolio <a href="https://pmaxy.github.io/Portfolio-finish-mobile-version/"></a>
+# 📖 Patrick wanjiru Portifolio <a href="https://pmaxy.github.io/Portfolio-finish-mobile-version/">Click Me</a>
 
 > My first Design of portifolio.
 
