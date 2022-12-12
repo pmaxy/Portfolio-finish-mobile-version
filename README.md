@@ -35,11 +35,11 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Hello Microverse <a name="about-project"></a>
+# 📖 Patrick wanjiru Portifolio <a href="https://pmaxy.github.io/Portfolio-finish-mobile-version/"></a>
 
-> Introduction to the first project.
+> My first Design of portifolio.
 
-**Portiflio Setup and mobile first** is a introductory project to test skills for basic concepts of programming
+**Portiflio Setup ** Design of my Portifolio including the work done before
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -49,8 +49,8 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **navigation toolbar**
-- **interactive view**
+- **navigation elements**
+- **interactive Response**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -62,28 +62,28 @@ follow the below steps to get started
 
 ### Prerequisites
 
->you need to create a repository and then copy the code link to local storage using git bash
+>You need to have the link of the page.
 
 ### Setup
 
->clone the folder in your specified directory by "git clone + link" and make sure the file has be copied.
+>Ensure you have a working browser.
 
 
 ### Install
 
-> use Visual studio to the project to install the project by pull request
+> If not updated or uses a browser that is not adaptible install chrome, Monzilla e.t.c. 
 
 ### Usage
 
->To run it you need to run some commads on git that include git add . ,git commit and git push
+>it is used to guide on what projects did before and currently on progress.
 
 ### Run tests
 
->open the project after youv made whole changes
+>test the errors and check before deploying.
 
 ### Deployment
-reuest for the code review
-
+>open my gthub account click on repository name Portfolio-finish-mobile-version then go to setting and copy the link
+on the page to your rowser.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -106,9 +106,9 @@ reuest for the code review
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **navigation bar**
-- [ ] **hover**
-- [ ] **humbugermenu**
+- [ ] **navigation elements**
+- [ ] **tansition and animations**
+- [ ] **interactive view**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
