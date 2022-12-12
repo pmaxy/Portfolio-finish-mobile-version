@@ -35,11 +35,12 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Patrick wanjiru Portifolio <a href="https://pmaxy.github.io/Portfolio-finish-mobile-version/">Click Me</a>
+# 📖 Patrick wanjiru Portifolio 
 
 > My first Design of portifolio.
 
 **Portiflio Setup ** Design of my Portifolio including the work done before
+><a href="https://pmaxy.github.io/Portfolio-finish-mobile-version/">Click here to view the page</a>
 
 ## 🛠 Built With <a name="built-with"></a>
 
